@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhando item empacotado</title>
+    <style>
+        div.conteiner {
+            background-color: bisque;
+
+            display: flex;
+            flex-flow: row wrap;
+            height: 400px;
+            align-content: stretch;
+        }
+
+        div.item {
+            background-color: lightgray;
+            border: 1px solid black;
+            text-align: center; /* Centralizar o texto do item */
+            padding: 40px;
+        }
+        div.conteiner1 {
+            background-color: rgb(139, 105, 63);
+
+            display: flex;
+            flex-flow: row wrap;
+            height: 400px;
+            align-content: flex-start;
+        }
+
+        div.item1 {
+            background-color: lightgray;
+            border: 1px solid black;
+            text-align: center; /* Centralizar o texto do item */
+            padding: 40px;
+        }
+        div.conteiner2 {
+            background-color: rgb(32, 52, 161);
+
+            display: flex;
+            flex-flow: row wrap;
+            height: 400px;
+            align-content: flex-end;
+        }
+
+        div.item2 {
+            background-color: lightgray;
+            border: 1px solid black;
+            text-align: center; /* Centralizar o texto do item */
+            padding: 40px;
+        }
+        div.conteiner3 {
+            background-color: rgb(151, 13, 144);
+
+            display: flex;
+            flex-flow: row wrap;
+            height: 400px;
+            align-content: center;
+        }
+
+        div.item3 {
+            background-color: lightgray;
+            border: 1px solid black;
+            text-align: center; /* Centralizar o texto do item */
+            padding: 40px;
+        }
+        div.conteiner4 {
+            background-color: rgb(14, 211, 152);
+
+            display: flex;
+            flex-flow: row wrap;
+            height: 400px;
+            align-content: space-between
+            ;
+        }
+
+        div.item4 {
+            background-color: lightgray;
+            border: 1px solid black;
+            text-align: center; /* Centralizar o texto do item */
+            padding: 40px;
+        }
+        div.conteiner5 {
+            background-color: rgb(131, 226, 6);
+
+            display: flex;
+            flex-flow: row wrap;
+            height: 400px;
+            align-content: space-evenly;
+        }
+
+        div.item5 {
+            background-color: lightgray;
+            border: 1px solid black;
+            text-align: center; /* Centralizar o texto do item */
+            padding: 40px;
+        }
+        div.conteiner6 {
+            background-color: rgb(0, 195, 255);
+
+            display: flex;
+            flex-flow: row wrap;
+            height: 400px;
+            align-content: space-around;
+        }
+
+        div.item6 {
+            background-color: lightgray;
+            border: 1px solid black;
+            text-align: center; /* Centralizar o texto do item */
+            padding: 40px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Alinhamento de Itens em Contêiner Flexível</h1>
+    <p>Usando a propriedade Flexbox no CSS, você pode criar contêineres flexíveis que ajustam a posição e o espaçamento dos itens automaticamente, facilitando o layout responsivo. Com ela, é possível alinhar, distribuir e organizar elementos de forma prática, permitindo que cada item se ajuste conforme o espaço disponível no contêiner.</p>
+    <h2>Stretch (Padrão)</h2>
+    <p>Estica os itens para que ocupem todo o espaço disponível, ajustando automaticamente seu tamanho dentro do contêiner.</p>
+    <div class="conteiner"> 
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+        <div class="item">Item 7</div>
+        <div class="item">Item 8</div>
+        <div class="item">Item 9</div>
+        <div class="item">Item 10</div>
+    </div>
+    <h2>Flex - Start </h2>
+    <p>Alinha todos os itens ao início do contêiner, colocando-os no início do eixo principal.</p>
+    <div class="conteiner1"> 
+        <div class="item1">Item 1</div>
+        <div class="item1">Item 2</div>
+        <div class="item1">Item 3</div>
+        <div class="item1">Item 4</div>
+        <div class="item1">Item 5</div>
+        <div class="item1">Item 6</div>
+        <div class="item1">Item 7</div>
+        <div class="item1">Item 8</div>
+        <div class="item1">Item 9</div>
+        <div class="item1">Item 10</div>
+    </div>
+    <h2>Flex - End </h2>
+    <p>Alinha todos os itens ao final do contêiner, deixando-os agrupados na extremidade.</p>
+    <div class="conteiner2"> 
+        <div class="item2">Item 1</div>
+        <div class="item2">Item 2</div>
+        <div class="item2">Item 3</div>
+        <div class="item2">Item 4</div>
+        <div class="item2">Item 5</div>
+        <div class="item2">Item 6</div>
+        <div class="item2">Item 7</div>
+        <div class="item2">Item 8</div>
+        <div class="item2">Item 9</div>
+        <div class="item2">Item 10</div>
+    </div>
+    <h2>Center</h2>
+    <p>Centraliza todos os itens no contêiner, colocando-os no meio do eixo principal.</p>
+    <div class="conteiner3"> 
+        <div class="item3">Item 1</div>
+        <div class="item1">Item 2</div>
+        <div class="item3">Item 3</div>
+        <div class="item3">Item 4</div>
+        <div class="item3">Item 5</div>
+        <div class="item3">Item 6</div>
+        <div class="item3">Item 7</div>
+        <div class="item3">Item 8</div>
+        <div class="item3">Item 9</div>
+        <div class="item3">Item 10</div>
+    </div>
+    <h2>Space Between</h2>
+    <p>Coloca o espaço uniformemente entre os itens, deixando as extremidades encostadas nas bordas do contêiner.</p>
+    <div class="conteiner4"> 
+        <div class="item4">Item 1</div>
+        <div class="item4">Item 2</div>
+        <div class="item4">Item 3</div>
+        <div class="item4">Item 4</div>
+        <div class="item4">Item 5</div>
+        <div class="item4">Item 6</div>
+        <div class="item4">Item 7</div>
+        <div class="item4">Item 8</div>
+        <div class="item4">Item 9</div>
+        <div class="item4">Item 10</div>
+    </div>
+    <h2>Space Evenly</h2>
+    <p>Distribui o espaço igualmente entre os itens e nas extremidades, criando um espaçamento uniforme em todo o contêiner.</p>
+    <div class="conteiner5"> 
+        <div class="item5">Item 1</div>
+        <div class="item5">Item 2</div>
+        <div class="item5">Item 3</div>
+        <div class="item5">Item 4</div>
+        <div class="item5">Item 5</div>
+        <div class="item5">Item 6</div>
+        <div class="item5">Item 7</div>
+        <div class="item5">Item 8</div>
+        <div class="item5">Item 9</div>
+        <div class="item5">Item 10</div>
+    </div>
+    <h2> Space Oround</h2>
+    <p>Distribui o espaço ao redor dos itens, adicionando espaçamento igual entre os itens e deixando espaços menores nas extremidades do contêiner.</p>
+    <div class="conteiner6"> 
+        <div class="item6">Item 1</div>
+        <div class="item6">Item 2</div>
+        <div class="item6">Item 3</div>
+        <div class="item6">Item 4</div>
+        <div class="item6">Item 5</div>
+        <div class="item6">Item 6</div>
+        <div class="item6">Item 7</div>
+        <div class="item6">Item 8</div>
+        <div class="item6">Item 9</div>
+        <div class="item6">Item 10</div>
+    </div2
+</body>
+</html>
