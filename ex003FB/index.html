@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            padding: 10px;
+        }
+        div.conteiner{
+            background-color: aquamarine;
+            display: flex;
+            flex-flow: row wrap;
+        }
+        div.item{
+            background-color: blue;
+            border: 1px solid black;
+            text-align: center;
+            color: white;
+            padding: 10px;
+        }
+        div.conteiner1{
+            display: flex;
+            flex-flow: row wrap;
+            background-color: rgb(168, 172, 171);
+            height: 300px;
+        }
+
+        div.item1{
+            align-self: auto;
+            height: 50px;
+            background-color: rgb(0, 255, 234);
+            border: 1px solid black;
+            text-align: center;
+            color: white;
+            padding: 10px;
+        }
+        div.item2{
+            align-self: flex-start;
+            height: 50px;
+            background-color: rgb(235, 194, 11);
+            border: 1px solid black;
+            text-align: center;
+            color: white;
+            padding: 10px;
+        }
+        div.item3{
+            align-self: flex-end;
+            height: 50px;
+            background-color: rgb(255, 255, 255);
+            border: 1px solid black;
+            text-align: center;
+            color: rgb(0, 0, 0);
+            padding: 10px;
+        }
+        div.item4{
+            align-self: center;
+            height: 50px;
+            background-color: rgb(0, 255, 34);
+            border: 1px solid black;
+            text-align: center;
+            color: white;
+            padding: 10px;
+        }
+        div.item5{
+            align-self: stretch;
+            background-color: rgb(255, 0, 64);
+            border: 1px solid black;
+            text-align: center;
+            color: white;
+            padding: 10px;
+        }
+        div#i1{
+            order: 0;
+        }
+        div#i2{
+            order: 0;
+        }
+        div#i3{
+            order: 0;
+        }
+        div#i4{
+            order: 0;
+        }
+        div#i5{
+            order: 2;
+        }
+        div#i6{
+            order: 0;
+        }
+        div#i7{
+            order: 0;
+        }
+        div#i8{
+            order: -1;
+        }
+        div#i9{
+            order: 0;
+        }
+        div#i10{
+            order: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Usando o ORDER, para os blocos</h1>
+    <div class="conteiner"> 
+        <div class="item" id="i1">Item 1</div>
+        <div class="item" id="i2">Item 2</div>
+        <div class="item" id="i3">Item 3</div>
+        <div class="item" id="i4">Item 4</div>
+        <div class="item" id="i5">Item 5</div>
+        <div class="item" id="i6">Item 6</div>
+        <div class="item" id="i7">Item 7</div>
+        <div class="item" id="i8">Item 8</div>
+        <div class="item" id="i9">Item 9</div>
+        <div class="item" id="i10">Item 10</div>
+    </div>
+    <p>Organização dos blocos, por ORDER. </p>
+
+    <h1>Usando o aling-salf nos itens</h1>
+    <p>div.item1{
+        align-self: auto;</p> <br>
+    <p>div.item2{
+        align-self: flex-start;</p> <br>
+
+    <p>div.item3{
+        align-self: flex-end;</p> <br>
+
+    <p>div.item4{
+        align-self: center;</p> <br>
+
+    <p>div.item5{
+        align-self: stretch;</p> <br>
+    <div class="conteiner1"> 
+        <div class="item1" id="i1">Item 1</div>
+        <div class="item2" id="i2">Item 2</div>
+        <div class="item3" id="i3">Item 3</div>
+        <div class="item4" id="i4">Item 4</div>
+        <div class="item5" id="i5">Item 5</div>
+    </div>
+</body>
+</html>
