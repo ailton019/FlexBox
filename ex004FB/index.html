@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-box</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+       .conteiner {
+        background-color: aquamarine;
+        display: flex;
+        flex-flow: row nowrap;
+       }
+
+       .item {
+        background-color: blue;
+        border: 1px solid black;
+        text-align: center;
+        color: white;
+        flex-basis: 100px;
+       }
+       h1{
+        margin: 10px;
+       }
+       .conteiner1 {
+        background-color: aquamarine;
+        display: flex;
+        flex-flow: row wrap;
+       }
+
+       .item1 {
+        background-color: rgb(14, 129, 4);
+        border: 1px solid black;
+        text-align: center;
+        color: white;
+        flex-basis: auto;
+       }
+       .conteiner2 {
+        background-color: aquamarine;
+        display: flex;
+        flex-flow: row nowrap;
+       }
+
+       .item2 {
+        height: 50px;
+        background-color: rgb(14, 129, 4);
+        border: 1px solid black;
+        text-align: center;
+        color: white;
+        flex-basis: 250px;
+        flex-shrink: 1;
+        flex-grow: 1;
+
+       }
+       p{
+        padding: 10px;
+        margin: 10px;
+       }
+    </style>
+</head>
+<body>
+    <h1>Flex Box - 'Flex-basis'</h1>
+
+    <p>usando o row nowrap, para não quebrar o conteudo</p>
+    <div class="conteiner">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+        <div class="item">Item 7</div>
+    </div>
+
+    <p>usando o row wrap, para quebrar o conteudo.</p>
+    <p>O conteudo de cada item se adapta a cada celula.</p>
+    <div class="conteiner1">
+        <div class="item1">Item 1 maior </div>
+        <div class="item1">Item 2 muito maior </div>
+        <div class="item1">Item 3 </div>
+        <div class="item1">Item 4</div>
+        <div class="item1">Item 5</div>
+        <div class="item1">Item 6 muito maior que o anterior</div>
+        <div class="item1">Item 7</div>
+    </div>
+
+    <h1>usando o flex-shrink e flex grow</h1>
+    <p>para controlar se pode crescer ou diminuir.</p>
+
+    <p>Nesse caso está configurado para diminuir. <br>
+
+        flax-shrink:1; <br>
+        flex-grow: 0; <br>
+    </p>
+    
+    <div class="conteiner2">
+        <div class="item2">Item 1</div>
+        <div class="item2">Item 2</div>
+        <div class="item2">Item 3</div>
+        <div class="item2">Item 4</div>
+
+    </div>
+</body>
+</html>
