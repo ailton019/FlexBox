@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-box</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+       .conteiner {
+        background-color: aquamarine;
+        display: flex;
+        flex-flow: row wrap;
+       }
+
+       .item {
+        background-color: blue;
+        border: 1px solid black;
+        text-align: center;
+        color: white;
+        flex-basis: 100px;
+       }
+       h1{
+        margin: 10px;
+       }
+       div#iA{
+        flex: 1 0 100px
+
+       }
+       div#iB{ 
+        flex: 1 0 100px
+        }
+        div#iC{
+            flex: 1 0 100px
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Flex Box - 'Flex-basis'</h1>
+
+    <p>usando o row wrap, para não quebrar o conteudo</p>
+    <div class="conteiner">
+        <div class="item" id="iA">Item 1</div>
+        <div class="item" id="iB">Item 2</div>
+        <div class="item" id="iC">Item 3</div>
+    </div>
+</body>
+</html>
